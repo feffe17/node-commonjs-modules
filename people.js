@@ -1,16 +1,24 @@
 console.log("hi there");
 
 const { utente } = require("./names");
-
-const user = utente("federico" , "di murro");
-
-console.log(user);
-
 const { hobbies } = require("./hobbies");
 
-const passatempi = hobbies("pass1" , "pass2" , "pass3");
 
-console.log(passatempi);
+
+function persona() {
+    const user = utente("federico" , "di murro");
+    const passatempi = hobbies("palestra" , "serie tv" , "ballare");
+    
+    return{
+        firstName: user.firstName,
+        lastName: user.lastName,
+        hobbies: passatempi.hobbies
+    }
+    
+}
+
+console.log(persona());
+
 
 
 
