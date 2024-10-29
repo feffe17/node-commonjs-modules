@@ -5,4 +5,4 @@ function utente(firstName , lastName) {
     };
 }
 
-export utente
+export default utente
