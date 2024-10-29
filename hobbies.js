@@ -8,4 +8,4 @@ function hobbies(hobbyOne , hobbyTwo , hobbyThree) {
     }
 }
 
-export default hobbies
+module.exports = {hobbies}
